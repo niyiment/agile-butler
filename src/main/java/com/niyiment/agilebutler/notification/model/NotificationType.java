@@ -1,0 +1,14 @@
+package com.niyiment.agilebutler.notification.model;
+
+public enum NotificationType {
+    STANDUP_REMINDER,
+    STANDUP_AGGREGATED,
+    DECISION_SESSION_CREATED,
+    DECISION_SESSION_CLOSED,
+    BLOCKER_FLAGGED,
+    MENTION,
+    EMAIL_NOTIFICATION,
+    SMS_NOTIFICATION,
+    SLACK_NOTIFICATION,
+    TEAM_ANNOUNCEMENT
+}
