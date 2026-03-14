@@ -11,13 +11,70 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  cupertino_icons: ^1.0.8
+
+
+
+  # state management
+  flutter_bloc: ^9.1.1
+  equatable: ^2.0.8
+
+  # network
+  dio: ^5.9.2
+  pretty_dio_logger: ^1.4.0
+
+  # routing
+  go_router: ^17.1.0
+
+  # dependency injection
+  get_it: ^9.2.1
+  injectable: ^2.7.1+4
+
+  # code generation
+  freezed_annotation: ^3.1.0
+  json_annotation: ^4.11.0
+
+  # local storage
+  drift: ^2.32.0
+  drift_flutter: ^0.3.0
+  sqlite3_flutter_libs: ^0.6.0+eol
+
+  # secure storage
+  flutter_secure_storage: ^10.0.0
+
+  # cache
+  hive_flutter: ^1.1.0
+
+  # connectivity
+  connectivity_plus: ^7.0.0
+
+  # logging
+  logger: ^2.6.2
+
+  # utils
+  rxdart: ^0.28.0
+  synchronized: ^3.4.0
+  intl: ^0.20.2
+  collection: ^1.19.1
+
+  # ui
+  google_fonts: ^8.0.2
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
 
+  # code generation
+  build_runner: ^2.12.2
+  freezed: ^3.2.5
+  json_serializable: ^6.13.0
+  injectable_generator: ^2.12.1
+  drift_dev: ^2.32.0
+  mocktail: ^1.0.4
+  http_mock_adapter: ^0.6.1
+
+  # linting
   flutter_lints: ^6.0.0
+  very_good_analysis: ^10.1.0
 
 flutter:
   uses-material-design: true

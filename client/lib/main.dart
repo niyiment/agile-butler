@@ -1,18 +1,11 @@
+import 'package:client/app/app.dart';
+import 'package:client/core/constants/app_config.dart';
+import 'package:client/di/injection.dart';
 import 'package:flutter/material.dart';
 
-void main() {
-  runApp(const MyApp());
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await configureDependencies(config: AppConfig.dev);
+  runApp(const App());
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Flutter Demo',
-      theme: ThemeData(colorScheme: .fromSeed(seedColor: Colors.deepPurple)),
-      home: const Center(child: Text('Agile Butler'),),
-    );
-  }
-}
